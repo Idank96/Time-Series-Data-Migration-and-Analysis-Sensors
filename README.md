@@ -1,30 +1,34 @@
-## Python + SQL data ingestion and analysis
+# Python + SQL data ingestion and analysis
+This repository provides a Python and SQL pipeline and queries for ingesting and analyzing sensor data.
 
+
+## Relation Diagram
 ![alt text](Diagram.drawio.png)
-![alt text](flow.drawio.png)
-
-
 > Assumptions:
 > * Each sensor must be in at least one location.
 > * A location does not have to have a sensor in it.
 > * Each reading must come from only one sensor.
 > * Each reading has a sensor.
+__________________________________________________________________________________
+## Flow
+The pipeline consists of the following steps:
+![alt text](flow.drawio.png)
 
-
-
-This repository provides a Python and SQL pipeline for ingesting and analyzing sensor data. The pipeline consists of the following steps:
+__________________________________________________________________________________
 
 1. Convert CSV files to Parquet files.
 2. Load Parquet files into PostgreSQL as raw data tables.
 3. Transform the raw data tables into more concise and efficient tables for specific queries.
 4. Write and run queries according to the given questions.
+__________________________________________________________________________________
 
-Here how I've done it:
+## Thinking Process
+Here is how I've done it:
 
 **Day 1**
 
 * Understand the task and ask questions.
-* Design the graph of the tables.
+* Design the diagram of the relation tables.
 * Write a Python and SQL pipeline to transform and load the data: CSV --> Parquet --> PostgreSQL tables.
 * Write the 2nd and 3rd query tasks.
 
