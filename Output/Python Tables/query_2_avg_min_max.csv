@@ -1,0 +1,4 @@
+SensorID,ReadingValue,ReadingValue,ReadingValue
+,mean,min,max
+1,147.8716306156406,108.9,185.0
+2,162.93385714285714,116.61,222.19

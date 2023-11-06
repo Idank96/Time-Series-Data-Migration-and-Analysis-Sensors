@@ -1,0 +1,4 @@
+SensorID,SensorType,LocationID
+1,Temperature,10
+2,Pressure,20
+3,Motion,30
