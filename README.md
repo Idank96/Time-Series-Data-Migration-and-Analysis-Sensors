@@ -30,6 +30,7 @@ Here is how I've done it:
 * Write a Python and SQL pipeline to transform and load the data: CSV --> Parquet --> PostgreSQL tables.
 * Write the 2nd and 3rd query tasks.
 
+
 **Day 2**
 
 * Write the fourth query:
@@ -38,7 +39,7 @@ Here is how I've done it:
 > The primary key of each table is a pair of sensorID and "type of period". This way, it would be easy to select a specific sensor and month (for example) and get the average reading of that month.
 
 * Write the 4th and 5th query tasks.
-* Insert lookup table and write query with it (not DONE yes).
+* Insert lookup table.
 * Convert all the queries to Python in Pandas.
 * Write the ETL vs. ELT evaluation notebook.
 * Create the requirements.txt file and README.md file.
