@@ -1,6 +1,16 @@
 ## Python + SQL data ingestion and analysis
 
 ![alt text](Diagram.drawio.png)
+![alt text](flow.drawio.png)
+
+
+> Assumptions:
+> * Each sensor must be in at least one location.
+> * A location does not have to have a sensor in it.
+> * Each reading must come from only one sensor.
+> * Each reading has a sensor.
+
+
 
 This repository provides a Python and SQL pipeline for ingesting and analyzing sensor data. The pipeline consists of the following steps:
 
