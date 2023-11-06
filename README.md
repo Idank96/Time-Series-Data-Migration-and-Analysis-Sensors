@@ -1,5 +1,7 @@
 ## Python + SQL data ingestion and analysis
 
+![alt text](Diagram.drawio.png)
+
 This repository provides a Python and SQL pipeline for ingesting and analyzing sensor data. The pipeline consists of the following steps:
 
 1. Convert CSV files to Parquet files.
