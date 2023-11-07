@@ -14,10 +14,10 @@ ________________________________________________________________________________
 The pipeline consists of the following steps:
 ![alt text](flow.drawio.png)
 
-1. Convert CSV files to Parquet files.
-2. Load Parquet files into PostgreSQL as raw data tables.
-3. Transform the raw data tables into more concise and efficient tables for specific queries.
-4. Write and run queries according to the given questions.
+> 1. Convert CSV files to Parquet files.
+> 2. Load Parquet files into PostgreSQL as raw data tables.
+> 3. Transform the raw data tables into more concise and efficient tables for specific queries.
+> 4. Write and run queries according to the given questions.
 __________________________________________________________________________________
 
 ## Thinking Process
