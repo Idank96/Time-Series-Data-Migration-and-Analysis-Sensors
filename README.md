@@ -47,12 +47,14 @@ Here is how I've done it:
 * Create the requirements.txt file and README.md file.
 
   # Project Structure 
-  Data Directory - the raw tables (csv and parquet)
-  Python\TimeSeriesAnalysis.py - the python code with pandas queries/functions.
-  Python\python_and_sql_run_guide.ipynb - Show the flow of code of python + SQL.
-  SQL\tables_creations.sql - The tables creation queries.
-  SQL\insert_data_to_tables.sql - the queries that insert data from the raw tables to final tables.
-  SQL\queries.sql - the answers to the queries questions.
-  Output\Images - postgreSQL screenshots of the queries with the result table.
-  Output\Python Tables - csv tables created by the python script.
+  * Data Directory - the raw tables (csv and parquet)
+  * Python\TimeSeriesAnalysis.py - Pandas queries/functions.
+  * Python\python_and_sql_run_guide.ipynb - Show the flow of code of python + SQL.
+  * SQL\tables_creations.sql - The tables creation queries.
+  * SQL\insert_data_to_tables.sql - the queries that insert data from the raw tables to final tables.
+  * SQL\queries.sql - the answers to the queries questions.
+  * Output\Images - postgreSQL screenshots of the queries with the result table.
+  * Output\Python Tables - csv tables created by the python script.
+ 
+    **The SQL in `Python\python_and_sql_run_guide.ipynb` and `SQL` directory are same. So find your best view 😉 **
   
