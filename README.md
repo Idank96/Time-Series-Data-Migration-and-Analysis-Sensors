@@ -33,12 +33,12 @@ Here is how I've done it:
 
 **Day 2**
 
-* Write the fourth query:
+* Write the 4th query:
 
 > I chose to create a table for each "type of period": hour_readings, daily_readings, monthly_readings.
 > The primary key of each table is a pair of sensorID and "type of period". This way, it would be easy to select a specific sensor and month (for example) and get the average reading of that month.
 
-* Write the 4th and 5th query tasks.
+* Write the 5th query tasks.
 * Insert lookup table.
 * Convert all the queries to Python in Pandas.
 * Write the ETL vs. ELT evaluation notebook.
