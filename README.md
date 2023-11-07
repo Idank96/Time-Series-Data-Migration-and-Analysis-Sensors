@@ -27,6 +27,7 @@ Here is how I've done it:
 
 * Understand the task and ask questions.
 * Design the diagram of the relation tables.
+* I've modified SMP data of electricity consumption that I had on my computer from previous project.
 * Write a Python and SQL pipeline to transform and load the data: CSV --> Parquet --> PostgreSQL tables.
 * Write the 2nd and 3rd query tasks.
 
