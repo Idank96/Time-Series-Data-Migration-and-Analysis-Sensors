@@ -68,3 +68,20 @@ SELECT SensorID,
 	   AVG(ReadingValue) AS avg_readings
 FROM readings
 GROUP BY SensorID, EXTRACT(month from TimeStamp);
+
+-- Create table for finding trends by moving average of 9 hours
+CREATE TABLE hourly_moving_averages (
+  sensorID INT NOT NULL,
+  hour INT NOT NULL,
+  avg_readings FLOAT NOT NULL,
+  moving_average FLOAT NOT NULL
+);
+
+INSERT INTO hourly_moving_averages
+SELECT sensorID,
+	   hour,
+	   avg_readings,
+       AVG(avg_readings) OVER (PARTITION BY sensorID
+                              ORDER BY sensorID, hour
+                              ROWS BETWEEN 8 PRECEDING AND CURRENT ROW) AS moving_average
+FROM hourly_readings;
