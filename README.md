@@ -56,5 +56,5 @@ Here is how I've done it:
   * Output\Images - postgreSQL screenshots of the queries with the result table.
   * Output\Python Tables - csv tables created by the python script.
  
-    **The SQL in `Python\python_and_sql_run_guide.ipynb` and `SQL` directory are same. So find your best view 😉 **
+ **The SQL in `Python\python_and_sql_run_guide.ipynb` and `SQL` directory are same. So find your best view 😉**
   
