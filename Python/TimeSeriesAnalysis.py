@@ -203,6 +203,24 @@ def query_5(df: pd.DataFrame = pd.DataFrame()):
     return hourly_df, daily_df, monthly_df
 
 
+def plot_trends():
+    # Connect to postgres
+    engine = create_engine(f"postgresql://postgres:123123@localhost:5432/sensorsDB")
+
+    # Get table from postgres
+    moving_averages_df = pd.read_sql_query('SELECT * FROM hourly_moving_averages', con=engine)
+
+    # Filter sensor 3 (for example)
+    moving_averages_df = moving_averages_df[moving_averages_df['sensorid'] == 3]
+
+    # Plot both avg_readings and moving_average on the same graph
+    plt.plot(moving_averages_df['hour'], moving_averages_df['avg_readings'], label='avg_reading', color='red')
+    plt.plot(moving_averages_df['hour'], moving_averages_df['moving_average'], label='moving_average', color='blue')
+    plt.legend()
+    plt.savefig('hourly_trend_of_sensor_3_query_5.jpg')
+    plt.show()
+
+
 def main():
     data_dir = r"C:\Idan\DataYoga\Data"
     convert_csvs_to_parquet(dir_path=data_dir)
@@ -212,7 +230,7 @@ def main():
     above_threshold_df = query_3(df=reading_df, threshold=120)
     hourly_df, daily_df, monthly_df = query_4(df=reading_df)
     hourly_df_with_trends, daily_df_with_trends, monthly_df_with_trends = query_5(df=reading_df)
-
+    plot_trends()
 
 if __name__ == '__main__':
     main()
