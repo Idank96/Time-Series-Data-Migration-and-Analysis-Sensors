@@ -40,6 +40,7 @@ Here is how I've done it:
 > The primary key of each table is a pair of sensorID and "type of period". This way, it would be easy to select a specific sensor and month (for example) and get the average reading of that month.
 
 * Write the 5th query tasks.
+  > I've tried different window sizes, and finally, I chose a window of 9 hours for the moving average.
 * Insert lookup table.
 * Convert all the queries to Python in Pandas.
 * Write the ETL vs. ELT evaluation notebook.
